@@ -1,7 +1,6 @@
 import React from 'react'
 import {Component} from '../component/component.jsx'
 import { useState } from 'react'
-import array from './array.jsx'
 
 
 
