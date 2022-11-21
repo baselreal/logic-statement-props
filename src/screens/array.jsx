@@ -174,16 +174,16 @@ function LogicArray() {
         <h3>LOGIC STATEMENT ARRAY</h3>
 
         <div className="component-array">
-        <Component label="" value={maps} handleChange={handleChangeMaps} handleClick={handleClickMaps} result={handleMap} />
-        <Component label="" value={con} handleChange={handleChangeCon} handleClick={handleClickCon} result={handleCon} />
-        <Component label="" value={fil} handleChange={handleChangeFil} handleClick={handleClickFil} result={handleFil} />
-        <Component label="" value={find} handleChange={handleChangeFind} handleClick={handleClickFind} result={handleFind} />
-        <Component label="" value={inc} handleChange={handleChangeInc} handleClick={handleClickInc} result={handleInc} />
-        <Component label="" value={join} handleChange={handleChangeJoin} handleClick={handleClickJoin} result={handleJoin} />
-        <Component label="" value={push} handleChange={handleChangePush} handleClick={handleClickPush} result={handlePush} />
-        <Component label="" value={reduce} handleChange={handleChangeReduce} handleClick={handleClickReduce} result={handleReduce} />
-        <Component label="" value={reverse} handleChange={handleChangeReverse} handleClick={handleClickReverse} result={handleReverse} />
-        <Component label="" value={sort} handleChange={handleChangeSort} handleClick={handleClickSort} result={handleSort} />
+        <Component label="name map" value={maps} handleChange={handleChangeMaps} handleClick={handleClickMaps} result={handleMap} />
+        <Component label="name concat" value={con} handleChange={handleChangeCon} handleClick={handleClickCon} result={handleCon} />
+        <Component label="name filter" value={fil} handleChange={handleChangeFil} handleClick={handleClickFil} result={handleFil} />
+        <Component label="name find" value={find} handleChange={handleChangeFind} handleClick={handleClickFind} result={handleFind} />
+        <Component label="name includes" value={inc} handleChange={handleChangeInc} handleClick={handleClickInc} result={handleInc} />
+        <Component label="name join" value={join} handleChange={handleChangeJoin} handleClick={handleClickJoin} result={handleJoin} />
+        <Component label="name push" value={push} handleChange={handleChangePush} handleClick={handleClickPush} result={handlePush} />
+        <Component label="name reduce" value={reduce} handleChange={handleChangeReduce} handleClick={handleClickReduce} result={handleReduce} />
+        <Component label="name reverse" value={reverse} handleChange={handleChangeReverse} handleClick={handleClickReverse} result={handleReverse} />
+        <Component label="name sort" value={sort} handleChange={handleChangeSort} handleClick={handleClickSort} result={handleSort} />
         </div>
     </div>
   )
