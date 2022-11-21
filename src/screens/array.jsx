@@ -60,7 +60,7 @@ function LogicArray() {
 
   const handleClickFind = () => {
     const breaker = find?.split(' ')
-    const wordBreak4 = breaker?.find(x => x > 10)
+    const wordBreak4 = breaker?.find(x => x < 10)
     setHandleFind(wordBreak4)
   } 
 
@@ -76,8 +76,7 @@ function LogicArray() {
 
   const handleClickInc = () => {
     const breaker = inc?.split(' ')
-    const wordBreak5 = breaker?.includes()
-    console.log(wordBreak5)
+    const wordBreak5 = breaker?.includes('tidak ada input')
     setHandleInc(wordBreak5[0])
   }  
   
@@ -174,16 +173,16 @@ function LogicArray() {
         <h3>LOGIC STATEMENT ARRAY</h3>
 
         <div className="component-array">
-        <Component label="name map" value={maps} handleChange={handleChangeMaps} handleClick={handleClickMaps} result={handleMap} />
-        <Component label="name concat" value={con} handleChange={handleChangeCon} handleClick={handleClickCon} result={handleCon} />
-        <Component label="name filter" value={fil} handleChange={handleChangeFil} handleClick={handleClickFil} result={handleFil} />
-        <Component label="name find" value={find} handleChange={handleChangeFind} handleClick={handleClickFind} result={handleFind} />
-        <Component label="name includes" value={inc} handleChange={handleChangeInc} handleClick={handleClickInc} result={handleInc} />
-        <Component label="name join" value={join} handleChange={handleChangeJoin} handleClick={handleClickJoin} result={handleJoin} />
-        <Component label="name push" value={push} handleChange={handleChangePush} handleClick={handleClickPush} result={handlePush} />
-        <Component label="name reduce" value={reduce} handleChange={handleChangeReduce} handleClick={handleClickReduce} result={handleReduce} />
-        <Component label="name reverse" value={reverse} handleChange={handleChangeReverse} handleClick={handleClickReverse} result={handleReverse} />
-        <Component label="name sort" value={sort} handleChange={handleChangeSort} handleClick={handleClickSort} result={handleSort} />
+        <Component label="name map (value yg kamu input + berhasil)" value={maps} handleChange={handleChangeMaps} handleClick={handleClickMaps} result={handleMap} />
+        <Component label="name concat (value yg kamu input + array concat berhasil) " value={con} handleChange={handleChangeCon} handleClick={handleClickCon} result={handleCon} />
+        <Component label="name filter (value yg kamu input akan di filter)" value={fil} handleChange={handleChangeFil} handleClick={handleClickFil} result={handleFil} />
+        <Component label="name find (masukan value < 10)" value={find} handleChange={handleChangeFind} handleClick={handleClickFind} result={handleFind} />
+        <Component label="name includes (hasilnya false)" value={inc} handleChange={handleChangeInc} handleClick={handleClickInc} result={handleInc} />
+        <Component label="name join (value yg kamu input jika ada spasi diganti jadi -)" value={join} handleChange={handleChangeJoin} handleClick={handleClickJoin} result={handleJoin} />
+        <Component label="name push (menghitung value yg ada)" value={push} handleChange={handleChangePush} handleClick={handleClickPush} result={handlePush} />
+        <Component label="name reduce (tulis berapapun angka akan muncul 200)" value={reduce} handleChange={handleChangeReduce} handleClick={handleClickReduce} result={handleReduce} />
+        <Component label="name reverse (value yg kamu input akan terbalik)" value={reverse} handleChange={handleChangeReverse} handleClick={handleClickReverse} result={handleReverse} />
+        <Component label="name sort (value yg kamu input akan di urutkan)" value={sort} handleChange={handleChangeSort} handleClick={handleClickSort} result={handleSort} />
         </div>
     </div>
   )
