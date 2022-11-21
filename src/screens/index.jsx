@@ -1,6 +1,8 @@
 import React from 'react'
 import {Component} from '../component/component.jsx'
 import { useState } from 'react'
+import array from './array.jsx'
+
 
 
 export function Index() {
@@ -144,7 +146,12 @@ export function Index() {
   }
 
   return (
-  <div>
+
+  <div className='logic-string'>
+      
+     <h3>LOGIC STATEMENT STRING</h3>
+      
+    <div className='string'>
     <Component label="name uppercase" value={name} handleChange={handleChangeName} handleClick={handleClickName} result={resultName} />
     <Component label="name lowercase" value={user} handleChange={handleSetUser} handleClick={handleLowName} result={lowName} />
     <Component label="name repeat" value={repName} handleChange={handleRepName} handleClick={handleSetOutput} result={output} />
@@ -155,6 +162,9 @@ export function Index() {
     <Component label="name at" value={atName} handleChange={handleAtName} handleClick={handleSetOutputAtName} result={outputAt} />
     <Component label="name Includes" value={incName} handleChange={handleIncName} handleClick={handleSetOutputIncName} result={outputInc} />
     <Component label="name PadEnd" value={padName} handleChange={handlePadName} handleClick={handleSetOutputPadName} result={outputPad} />
+    </div>
+
+      
   </div>
   )
 }
